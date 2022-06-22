@@ -1,0 +1,51 @@
+.way {
+  /* background-color: blue; */
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.fail {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(60, 0, 255, 0.577);
+}
+
+#start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#clear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.big {
+  width: 600px;
+  height: 400px;
+  border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  display: flex;
+}
+
+.small {
+  width: 50px;
+  height: 400px;
+}
+
+#btn {
+  display: flex;
+  justify-content: center;
+}
+
+#hint {
+  text-align: center;
+  display: none;
+}

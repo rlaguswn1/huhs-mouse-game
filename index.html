@@ -2,10 +2,163 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>mouse-game</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <h2 align="center">마우스 피하기</h2>
+    <div class="big">
+        <div class="small">
+            <div class="way" id="start">시작</div>
+            <div class="way"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+
+        </div>
+        <div class="small">
+            <div class="fail"></div>
+            <div class="way"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+        </div>
+        <div class="small">
+            <div class="fail"></div>
+            <div class="way"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+        </div>
+        <div class="small">
+            <div class="way"></div>
+            <div class="way"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+        </div>
+        <div class="small">
+            <div class="way"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+        </div>
+        <div class="small">
+            <div class="way"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+        </div>
+        <div class="small">
+            <div class="way"></div>
+            <div class="fail"></div>
+            <div class="way"></div>
+            <div class="way"></div>
+            <div class="way"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+        </div>
+        <div class="small">
+            <div class="way"></div>
+            <div class="way"></div>
+            <div class="way"></div>
+            <div class="fail"></div>
+            <div class="way"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+        </div>
+        <div class="small">
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="way"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+        </div>
+        <div class="small">
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="way"></div>
+            <div class="way"></div>
+            <div class="way"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+        </div>
+        <div class="small">
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="way"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="way"></div>
+            <div class="way" id="clear">끝</div>
+        </div>
+        <div class="small">
+            <div class="fail"></div>
+            <div class="fail"></div>
+            <div class="way"></div>
+            <div class="way"></div>
+            <div class="way"></div>
+            <div class="way"></div>
+            <div class="way"></div>
+            <div class="fail"></div>
+        </div>
+    </div>
+    <h4 align="center">
+       '시작'부터 '끝'까지 벽에 닿지 않게 마우스 포인터를 이동하면 됩니다
+    </h4>
+    <br />
+    <div id="btn">
+        <button>조금 어렵다면</button>
+    </div>
+    <br />
+    <div id="hint">밖으로 돌아서 '끝'으로 바로갈 수 있습니다..^^</div>
+     <script>
+
+            $(".fail").mouseover(function(){
+                alert('실패!');
+            });
+
+            $("#clear").mouseover(function(){
+                event.preventDefault();
+                 alert('성공!');
+            });
+
+            $("#btn").click(function(){
+                $("#hint").show();
+            });
+         // document.getElementByclass("way").addEventListener('mouseout',function(){
+         //     document.getElementByclass("fail").style.display = 'block';
+         // });
+
+    </script>
 </body>
 </html>
